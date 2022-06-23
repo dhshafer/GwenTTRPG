@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg0="This changes the header 1" msg1="This changes the header 2" msg2="Third header"/>
+    <img alt="Picture of Dice" src="./assets/dice.png">
+    <GameCard gameName='Game Name Goes Here' sourceUrl='www.test.com' publisherType='publisher' genre='genre' mechanic='d20'/>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GameCard from './components/GameCard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GameCard
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  background-image: url("./assets/resizedBackground.png");
 }
 </style>
